@@ -21,7 +21,7 @@ def teardown_function():
     driver.quit()
 
 def my_cred():
-    return [('standard_user', 'secret_sauce'), ('locked_out_user', 'secret_sauce'), ('performance_glitch_user', 'secret_sauce')]
+    return [('standard_user', 'secret_sauces'), ('locked_out_users', 'secret_sauce'), ('performance_glitch_users', 'secret_sauce')]
 
 @pytest.mark.parametrize("username, password", my_cred())
 def test_login(username, password):
